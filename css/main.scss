@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Sunshiney&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+
+h1 {
+  font-size: 35px;
+  font-family: "Sunshiney", cursive;
+  color: #242038;
+  box-sizing: border-box;
+  padding: 40px 40px 20px 20px;
+}
+/* cat icons in title */
+.flip {
+  transform: scaleX(-1);
+}
+
+.cat {
+  width: 60px;
+  height: 90px;
+  line-height: 1.88889;
+  color: #696d7d;
+}
+/*  */
+h2 {
+  font-size: 30px;
+  font-family: "Comfortaa", cursive;
+  color: #242038;
+  box-sizing: border-box;
+  padding: 40px 40px 20px 20px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Roboto Mono", monospace;
+  color: #242038;
+  box-sizing: border-box;
+  margin: 0px;
+  /* padding: 40px 40px 20px 20px;  */
+  float: right;
+}
+h4 {
+  color: #242038;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+}
+h5 {
+  font-size: 30px;
+  font-family: "Comfortaa", cursive;
+  color: #242038;
+  box-sizing: border-box;
+  padding: 40px 40px 20px 20px;
+}
+ul {
+  list-style-type: none;
+}
+/* positioning and styling */
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+
+.large {
+  font-size: 75px;
+}
+
+.small {
+  font-size: 30px;
+}
+.circle {
+  border-radius: 50%;
+  margin: 0.15em;
+  font-size: 3em;
+}
+
+#top {
+  font-size: 400px;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+#menu ol {
+  list-style: none;
+}
+
+#menu li {
+  display: inline;
+}
+
+.medium {
+  font-size: 50px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.88889;
+  background-color: #c8d5b9;
+}
+
+button {
+  background-color: #c8d5b9;
+  padding: 5px 10px;
+  margin: 2px 1px;
+  width: 500px;
+  border-radius: 10%;
+}
+
+button {
+  width: 400px;
+  border: none;
+}
+
+/* navigation bar */
+.topnav {
+  position: relative;
+  background-color: #8fc0a9;
+  font-size: 35px;
+  text-align: center;
+  color: black;
+  margin-top: -35px;
+}
+/* Font awesome icons */
+.fab {
+  font-size: 65px;
+  color: black;
+  text-align: center;
+}
+.fas {
+  font-size: 65px;
+  color: black;
+  text-align: center;
+}
+.active:hover {
+  background-color: #94a89a;
+}
+.active {
+  color: black;
+}
+div {
+  text-align: left;
+}
+/* header */
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header {
+  background: url(../img/services-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 35px;
+  font-family: "Sunshiney", cursive;
+  color: #242038;
+  box-sizing: border-box;
+  /* padding: 40px 40px 20px 20px; */
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl) {
+}
+
+// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
